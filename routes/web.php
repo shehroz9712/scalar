@@ -29,7 +29,8 @@ Route::name('user.')->group(
         Route::get('/form', 'HomeController@form')->name('form');
 
         Route::get('/blogs', 'HomeController@home')->name('blogs');
-        Route::get('/blog/{slug}', 'HomeController@home')->name('blog');
+        // Route::get('/blog/{slug}', 'HomeController@home')->name('blog');
+        Route::get('/blog', 'HomeController@home')->name('blog');
 
         Route::get('/{slug}', 'IndexController@pages')->name('page');
 

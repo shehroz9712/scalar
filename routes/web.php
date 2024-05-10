@@ -32,7 +32,7 @@ Route::name('user.')->group(
         // Route::get('/blog/{slug}', 'HomeController@home')->name('blog');
         Route::get('/blog', 'HomeController@home')->name('blog');
 
-        Route::get('/{slug}', 'IndexController@pages')->name('page');
+        Route::get('/{slug}', 'HomeController@page')->name('page');
 
         Route::get('/terms', 'ServiceController@terms')->name('terms.terms');
         Route::get('/terms_service', 'ServiceController@terms_service')->name('terms.terms_service');

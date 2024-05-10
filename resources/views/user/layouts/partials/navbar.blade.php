@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
                 <div class="logo">
-                    <a href="{{ route('user.index') }}"><img src="{{ getLogo() }}" style="width: 100px;"
+                    <a href="{{ route('user.index') }}"><img src="{{ getLogo() }}" style="width: 60px;"
                             alt="{{ getTitle() }}"></a>
                 </div>
             </div>
@@ -60,6 +60,22 @@
                 <ul class="navigation">
                     <li class="current"><a href="{{ route('user.index') }}">Home</a></li>
                     <li><a href="{{ route('user.about') }}">About us</a></li>
+                    <li class="dropdown"><a href="{{ route('user.page', 'main-page') }}">Main Page</a>
+                        <ul>
+                            <li><a href="{{ route('user.page', 'inner-page') }}">Inner Page 1</a></li>
+                            <li><a href="{{ route('user.page', 'inner-page') }}">Inner Page 2</a></li>
+                            <li><a href="{{ route('user.page', 'inner-page') }}">Inner Page 3</a></li>
+                            <li><a href="{{ route('user.page', 'inner-page') }}">Inner Page 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="{{ route('user.page', 'main-page') }}">Main Page 2</a>
+                        <ul>
+                            <li><a href="{{ route('user.page', 'inner-page') }}">Inner Page 1</a></li>
+                            <li><a href="{{ route('user.page', 'inner-page') }}">Inner Page 2</a></li>
+                            <li><a href="{{ route('user.page', 'inner-page') }}">Inner Page 3</a></li>
+                            <li><a href="{{ route('user.page', 'inner-page') }}">Inner Page 4</a></li>
+                        </ul>
+                    </li>
                     <li><a href="{{ route('user.contact') }}">Contact us</a></li>
                 </ul>
             </div>

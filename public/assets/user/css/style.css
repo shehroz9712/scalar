@@ -266,8 +266,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .header-area {
     background: #160f09 url("../img/texture/stripe-1.png") repeat scroll 0 0;
     border-bottom: 2px solid #e4985b;
-    padding-bottom: 70px;
-    padding-top: 34px;
+    padding-bottom: 45px;
+    padding-top: 15px;
 }
 .header-area .logo {
     margin: 13px 0

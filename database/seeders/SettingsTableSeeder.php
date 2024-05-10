@@ -32,8 +32,10 @@ class SettingsTableSeeder extends Seeder
             'instagram'       => 'instagram.com',
             'linkedin'        => 'linkedin.com',
             'footer_scripts'  => '',
-            'footer_sentence' => '© 2024  Designed and Develop by <a href="http://expertwebcraft.com/">Expert Web Craft</a>',
-            'copyright'       => 'SCALAR',
+            'footer_sentence' => 'Scalar Company provide expert consulting, financial advice. Over 25 years of
+            experience we ensure you always getting the good guidance from the top people in the
+            entire of finance industry.',
+            'copyright'       => '© 2024  Designed and Develop by <a href="http://expertwebcraft.com/">Expert Web Craft</a>',
             'created_at'      => date('Y-m-d H:i:s'),
             'updated_at'      => date('Y-m-d H:i:s')
         ]);

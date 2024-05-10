@@ -44,3 +44,4 @@
 
 <!-- thm custom script -->
 <script src="{{ jsFile('custom.js') }}"></script>
+@yield('js')

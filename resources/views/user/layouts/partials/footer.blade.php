@@ -5,12 +5,10 @@
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <div class="single-footer-widget Statistic-pdbottom">
                     <div class="footer-logo">
-                        <img src="{{ imageFile('resources/footer-logo.png') }}" alt="Awesome Footer Logo">
+                        <img src="{{ getLogo() }}" alt="{{ getTitle() }}"style="width: 100px;">
                     </div>
                     <div class="statistic-info">
-                        <p>Scalar Company provide expert consulting, financial advice. Over 25 years of
-                            experience we ensure you always getting the good guidance from the top people in the
-                            entire of finance industry.</p>
+                        <p>{{ getFooterSentence() }}</p>
                     </div>
                     <ul class="footer-social-links">
                         <li><a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a></li>
@@ -105,7 +103,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
                 <div class="copyright-text">
-                    <p>{!! getFooterSentence() !!}</p>
+                    <p>{!! getCopyright() !!}</p>
                 </div>
             </div>
             <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">

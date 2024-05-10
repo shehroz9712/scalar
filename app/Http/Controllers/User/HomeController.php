@@ -32,4 +32,8 @@ class HomeController extends Controller
     {
         return view('user.index');
     }
+    public function page()
+    {
+        return view('user.page');
+    }
 }

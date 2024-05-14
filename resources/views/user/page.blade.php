@@ -19,7 +19,8 @@
             </div>
             <div class="right pull-right">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="{{ route('user.index') }}">Home</a></li>
+
                     <li><span class="flaticon-arrowhead-pointing-to-the-right"></span></li>
                     <li><a href="#">Services</a></li>
                     <li><span class="flaticon-arrowhead-pointing-to-the-right"></span></li>

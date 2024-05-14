@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\User;;
 
+use App\Http\Requests\ContactFormRequest;
+use App\Models\Contact;
 use App\Models\Review;
 use App\Models\Saloon;
 use App\Models\Service;
@@ -32,8 +34,30 @@ class HomeController extends Controller
     {
         return view('user.index');
     }
+    public function career()
+    {
+        return view('user.career ');
+    }
+    public function faq()
+    {
+        return view('user.faq');
+    }
     public function page()
     {
         return view('user.page');
+    }
+
+
+    public function submit(ContactFormRequest $request)
+    {
+        Contact::create([
+            'name' => $request->input('name'),
+            'email' => $request->input('email'),
+            'phone' => $request->input('phone'),
+            'subject' => $request->input('subject'),
+            'message' => $request->input('message'),
+        ]);
+
+        return redirect()->back()->with('success', 'Your message has been submitted successfully!');
     }
 }

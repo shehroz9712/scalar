@@ -9,30 +9,38 @@
             </div>
             <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
                 <ul class="contact-info">
+                    @if (getAddress())
+                        <li>
+                            <div class="icon-holder">
+                                <span class="flaticon-signs"></span>
+                            </div>
+                            <div class="content">
+                                <h5>{!! getAddress() !!}</h5>
+                            </div>
+                        </li>
+                    @endif
+                    @if (getEmail())
+
                     <li>
                         <div class="icon-holder">
-                            <span class="flaticon-signs"></span>
+                            <span class="flaticon-e-mail-envelope envlop"></span>
                         </div>
                         <div class="content">
-                            <h5>{!! getAddress() !!}</h5>
+                            <h5>{!! getEmail() !!}<br>Mail us for enquiry </h5>
                         </div>
                     </li>
-                    <li>
-                        <div class="icon-holder">
-                            <span class="flaticon-clock"></span>
-                        </div>
-                        <div class="content">
-                            <h5>Mon - Sat 8.00 - 20.00 <br>Sunday CLOSED</h5>
-                        </div>
-                    </li>
-                    <li class="pdleft">
-                        <div class="icon-holder">
-                            <span class="flaticon-phone-call"></span>
-                        </div>
-                        <div class="content">
-                            <h5>{{ getPhone() }}<br>Call us for enquiry</h5>
-                        </div>
-                    </li>
+                    @endif
+                    @if (getPhone())
+                        <li class="pdleft">
+                            <div class="icon-holder">
+                                <span class="flaticon-phone-call"></span>
+                            </div>
+                            <div class="content">
+                                <h5>{{ getPhone() }}<br>Call us for enquiry</h5>
+                            </div>
+                        </li>
+                    @endif
+
                     <li class="request">
                         <a class="request-quote hvr-sweep-to-bottom" href="{{ route('user.form') }}">Get Started
 
@@ -58,25 +66,11 @@
             </div>
             <div class="navbar-collapse collapse clearfix">
                 <ul class="navigation">
-                    <li class="current"><a href="{{ route('user.index') }}">Home</a></li>
-                    <li><a href="{{ route('user.about') }}">About us</a></li>
-                    <li class="dropdown"><a href="{{ route('user.page', 'main-page') }}">Main Page</a>
-                        <ul>
-                            <li><a href="{{ route('user.page', 'inner-page') }}">Inner Page 1</a></li>
-                            <li><a href="{{ route('user.page', 'inner-page') }}">Inner Page 2</a></li>
-                            <li><a href="{{ route('user.page', 'inner-page') }}">Inner Page 3</a></li>
-                            <li><a href="{{ route('user.page', 'inner-page') }}">Inner Page 4</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a href="{{ route('user.page', 'main-page') }}">Main Page 2</a>
-                        <ul>
-                            <li><a href="{{ route('user.page', 'inner-page') }}">Inner Page 1</a></li>
-                            <li><a href="{{ route('user.page', 'inner-page') }}">Inner Page 2</a></li>
-                            <li><a href="{{ route('user.page', 'inner-page') }}">Inner Page 3</a></li>
-                            <li><a href="{{ route('user.page', 'inner-page') }}">Inner Page 4</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="{{ route('user.contact') }}">Contact us</a></li>
+                    <li class="{{ request()->route()->getName() == 'user.index' ? 'current' : '' }}"><a href="{{ route('user.index') }}">Home</a></li>
+                    <li class="{{ request()->route()->getName() == 'user.about' ? 'current' : '' }}"><a href="{{ route('user.about') }}">About us</a></li>
+                    <li class="{{ request()->route()->getName() == 'user.career' ? 'current' : '' }}"><a href="{{ route('user.career') }}">Career</a></li>
+                    <li class="{{ request()->route()->getName() == 'user.faq' ? 'current' : '' }}"><a href="{{ route('user.faq') }}">Faq</a></li>
+                    <li class="{{ request()->route()->getName() == 'user.contact' ? 'current' : '' }}"><a href="{{ route('user.contact') }}">Contact us</a></li>
                 </ul>
             </div>
         </nav>

@@ -21,8 +21,8 @@ class SettingsTableSeeder extends Seeder
 
         DB::table('settings')->insert([
             'title'           => 'SCALAR',
-            'email'           => 'info@scalar.com',
-            'phone'           => '123456789',
+            'email'           => 'info@scalarfinances.com',
+            'phone'           => '',
             'address'         => '008 City of Work ,<br>New York, NY 641109 US.',
             'dark-logo'       => 'dark-logo.png',
             'logo'            => 'logo.png',

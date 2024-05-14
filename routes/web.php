@@ -25,7 +25,12 @@ Route::name('user.')->group(
         Route::get('/', 'HomeController@home')->name('home');
         Route::get('/index', 'HomeController@home')->name('index');
         Route::get('/about', 'HomeController@about')->name('about');
+        Route::get('/career', 'HomeController@career')->name('career');
+        Route::get('/faq', 'HomeController@faq')->name('faq');
+
         Route::get('/contact', 'HomeController@contact')->name('contact');
+        Route::post('/contact', 'HomeController@submit')->name('contact.submit');
+
         Route::get('/form', 'HomeController@form')->name('form');
 
         Route::get('/blogs', 'HomeController@home')->name('blogs');

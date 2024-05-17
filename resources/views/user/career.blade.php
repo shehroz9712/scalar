@@ -52,12 +52,10 @@
                                 <h1>Current Openings</h1>
                                 <span class="border"></span>
                             </div>
-                            <p>Statisitc over 20 years of experience we’ll ensure you always get the best guidance. We serve
-                                clients at every level of their organization, in whatever capacity we can be most useful,
-                                whether as a trusted advisor to top management or as a hands-on coach for front line
-                                employees. For every engagement, we assemble a uts team with the most appropriate experience
-                                and expertise. Our goal is to optimise your business relationships by seds our tailoring our
-                                services to your individual requirements a hands-on coach for front line employees.</p>
+                            <p>Join our team of dedicated professionals who are passionate about making a positive impact on
+                                people's lives. At Scalar Finances, we offer rewarding career opportunities in finance,
+                                customer service, technology, and more.
+                                s.</p>
                         </div>
                         <div class="job-box">
                             <div class="select-category">

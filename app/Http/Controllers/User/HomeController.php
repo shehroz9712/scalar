@@ -4,6 +4,7 @@ namespace App\Http\Controllers\User;;
 
 use App\Http\Requests\ContactFormRequest;
 use App\Models\Contact;
+use App\Models\Faq;
 use App\Models\Review;
 use App\Models\Saloon;
 use App\Models\Service;
@@ -15,7 +16,9 @@ class HomeController extends Controller
 
     public function index()
     {
-        return view('user.index');
+        $faqs = Faq::Active()->get();
+
+        return view('user.index', compact('faqs'));
     }
     public function about()
     {
@@ -40,7 +43,9 @@ class HomeController extends Controller
     }
     public function faq()
     {
-        return view('user.faq');
+        $faqs = Faq::Active()->get();
+
+        return view('user.faq', compact('faqs'));
     }
     public function page()
     {

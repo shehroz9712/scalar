@@ -1,10 +1,5 @@
 @extends('user.layouts.app')
 @section('css')
-    <style>
-        ul li {
-            list-style: disc;
-        }
-    </style>
 @endsection
 @section('content')
     <!--Start breadcrumb area-->
@@ -85,17 +80,4 @@
         </div>
     </section>
     <!--End about area-->
-
-    <!--Start slogan area-->
-    <section class="slogan-area">
-        <div class="container">
-            <div class="title pull-left">
-                <h2>Over 20 years of experience we’ll ensure you always get the best guidance.</h2>
-            </div>
-            <div class="buttons pull-right">
-                <a href="#" class="hvr-sweep-to-bottom">request quote</a>
-            </div>
-        </div>
-    </section>
-    <!--End slogan area-->
 @endsection

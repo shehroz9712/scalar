@@ -22,8 +22,8 @@ Route::name('user.')->group(
     function () {
 
 
-        Route::get('/', 'HomeController@home')->name('home');
-        Route::get('/index', 'HomeController@home')->name('index');
+        Route::get('/', 'HomeController@index')->name('home');
+        Route::get('/index', 'HomeController@index')->name('index');
         Route::get('/about', 'HomeController@about')->name('about');
         Route::get('/career', 'HomeController@career')->name('career');
         Route::get('/faq', 'HomeController@faq')->name('faq');

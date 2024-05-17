@@ -54,123 +54,18 @@
                         </div>
                         <div class="faq-content">
                             <div class="accordion-box">
-                                <!--Start single accordion box-->
-                                <div class="accordion accordion-block">
-                                    <div class="accord-btn">
-                                        <h4>Statistic Consulting continues to grow and expand?</h4>
+                                @foreach ($faqs as $faq)
+                                    <!--Start single accordion box-->
+                                    <div class="accordion accordion-block">
+                                        <div class="accord-btn">
+                                            <h4>{{ $faq->question }}?</h4>
+                                        </div>
+                                        <div class="accord-content">
+                                            <p>{{ $faq->answer }}.</p>
+                                        </div>
                                     </div>
-                                    <div class="accord-content">
-                                        <p>Supported by a robust sales force and tight cost controls to the experienced
-                                            sustained double-digit growth over a numberof years, only to find that their
-                                            supply chain struggled to keep pace. In to particular, the initial state of
-                                            the company’s sales experienced sustained double-digit.</p>
-                                    </div>
-                                </div>
-                                <!--End single accordion box-->
-                                <!--Start single accordion box-->
-                                <div class="accordion accordion-block">
-                                    <div class="accord-btn">
-                                        <h4>Strategic and commercial approach with issues</h4>
-                                    </div>
-                                    <div class="accord-content">
-                                        <p>Supported by a robust sales force and tight cost controls to the experienced
-                                            sustained double-digit growth over a numberof years, only to find that their
-                                            supply chain struggled to keep pace. In to particular, the initial state of
-                                            the company’s sales experienced sustained double-digit.</p>
-                                    </div>
-                                </div>
-                                <!--End single accordion box-->
-                                <!--Start single accordion box-->
-                                <div class="accordion accordion-block">
-                                    <div class="accord-btn active">
-                                        <h4>A digital prescription for the pharma industry</h4>
-                                    </div>
-                                    <div class="accord-content collapsed">
-                                        <p>Supported by a robust sales force and tight cost controls to the experienced
-                                            sustained double-digit growth over a numberof years, only to find that their
-                                            supply chain struggled to keep pace. In to particular, the initial state of
-                                            the company’s sales experienced sustained double-digit.</p>
-                                    </div>
-                                </div>
-                                <!--End single accordion box-->
-                                <!--Start single accordion box-->
-                                <div class="accordion accordion-block">
-                                    <div class="accord-btn">
-                                        <h4>How do you successfully generate, capture, process?</h4>
-                                    </div>
-                                    <div class="accord-content">
-                                        <p>Supported by a robust sales force and tight cost controls to the experienced
-                                            sustained double-digit growth over a numberof years, only to find that their
-                                            supply chain struggled to keep pace. In to particular, the initial state of
-                                            the company’s sales experienced sustained double-digit.</p>
-                                    </div>
-                                </div>
-                                <!--End single accordion box-->
-                                <!--Start single accordion box-->
-                                <div class="accordion accordion-block">
-                                    <div class="accord-btn">
-                                        <h4>I would like to have some information about your Statistic?</h4>
-                                    </div>
-                                    <div class="accord-content">
-                                        <p>Supported by a robust sales force and tight cost controls to the experienced
-                                            sustained double-digit growth over a numberof years, only to find that their
-                                            supply chain struggled to keep pace. In to particular, the initial state of
-                                            the company’s sales experienced sustained double-digit.</p>
-                                    </div>
-                                </div>
-                                <!--End single accordion box-->
-                                <!--Start single accordion box-->
-                                <div class="accordion accordion-block">
-                                    <div class="accord-btn">
-                                        <h4>How do I submit a sponsorship request?</h4>
-                                    </div>
-                                    <div class="accord-content">
-                                        <p>Supported by a robust sales force and tight cost controls to the experienced
-                                            sustained double-digit growth over a numberof years, only to find that their
-                                            supply chain struggled to keep pace. In to particular, the initial state of
-                                            the company’s sales experienced sustained double-digit.</p>
-                                    </div>
-                                </div>
-                                <!--End single accordion box-->
-                                <!--Start single accordion box-->
-                                <div class="accordion accordion-block">
-                                    <div class="accord-btn">
-                                        <h4>How do I communicate securely by email with Ericsson users?</h4>
-                                    </div>
-                                    <div class="accord-content">
-                                        <p>Supported by a robust sales force and tight cost controls to the experienced
-                                            sustained double-digit growth over a numberof years, only to find that their
-                                            supply chain struggled to keep pace. In to particular, the initial state of
-                                            the company’s sales experienced sustained double-digit.</p>
-                                    </div>
-                                </div>
-                                <!--End single accordion box-->
-                                <!--Start single accordion box-->
-                                <div class="accordion accordion-block">
-                                    <div class="accord-btn">
-                                        <h4>I am a student, can I become a trainee at your company?</h4>
-                                    </div>
-                                    <div class="accord-content">
-                                        <p>Supported by a robust sales force and tight cost controls to the experienced
-                                            sustained double-digit growth over a numberof years, only to find that their
-                                            supply chain struggled to keep pace. In to particular, the initial state of
-                                            the company’s sales experienced sustained double-digit.</p>
-                                    </div>
-                                </div>
-                                <!--End single accordion box-->
-                                <!--Start single accordion box-->
-                                <div class="accordion accordion-block">
-                                    <div class="accord-btn">
-                                        <h4>How can we work together in this consulting service?</h4>
-                                    </div>
-                                    <div class="accord-content">
-                                        <p>Supported by a robust sales force and tight cost controls to the experienced
-                                            sustained double-digit growth over a numberof years, only to find that their
-                                            supply chain struggled to keep pace. In to particular, the initial state of
-                                            the company’s sales experienced sustained double-digit.</p>
-                                    </div>
-                                </div>
-                                <!--End single accordion box-->
+                                    <!--End single accordion box-->
+                                @endforeach
                             </div>
                         </div>
                     </div>

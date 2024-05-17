@@ -9,7 +9,7 @@
     <div id="slider1" class="rev_slider" data-version="5.0">
         <ul>
             <li data-transition="fade">
-                <img src="{{ imageFile('slides/1.jpg') }}" alt="" width="1920" height="695"
+                <img src="{{ imageFile('slides/2.jpg') }}" alt="" width="1920" height="695"
                     data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1">
                 <div class="tp-caption tp-resizeme" data-x="right" data-hoffset="0" data-y="center" data-voffset="0"
                     data-transform_idle="o:1;"
@@ -29,7 +29,7 @@
                 </div>
             </li>
             <li data-transition="slidedown">
-                <img src="{{ imageFile('slides/2.jpg') }}" alt="" width="1920" height="695"
+                <img src="{{ imageFile('slides/3.jpg') }}" alt="" width="1920" height="695"
                     data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="2">
                 <div class="tp-caption tp-resizeme" data-x="left" data-hoffset="0" data-y="center" data-voffset="0"
                     data-transform_idle="o:1;"
@@ -47,26 +47,7 @@
                     </div>
                 </div>
             </li>
-            <li data-transition="fade">
-                <img src="{{ imageFile('slides/3.jpg') }}" alt="" width="1920" height="695"
-                    data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1">
-                <div class="tp-caption tp-resizeme" data-x="right" data-hoffset="0" data-y="center" data-voffset="0"
-                    data-transform_idle="o:1;"
-                    data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;"
-                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
-                    data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" data-splitin="none" data-splitout="none"
-                    data-start="500">
-                    <div class="slide-content-box">
-                        <h1>Successful Careers <br>take Collaboration.</h1>
-                        <h3>Our mission is to help clients set new standards<br>of excellence in their industries.
-                        </h3>
-                        <div class="buttons">
-                            <a class="hvr-sweep-to-bottom" href="#">Contact us</a>
-                            <a class="black-bg hvr-sweep-to-bottom" href="#">Our Services</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
+    
 
         </ul>
     </div>

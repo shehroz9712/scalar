@@ -28,7 +28,49 @@
         </div>
     </section>
     <!--End breadcrumb bottom area-->
+    <!--Start welcome area-->
+    <section class="welcome-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="content">
+                        <div class="sec-title">
+                            <h1>Welcome to Scalar Finances, Where Financial Wellness is Within Reach
+                            </h1>
+                            <span class="border"></span>
+                        </div>
 
+                        <p>At Scalar Finances, we believe in making financial resources accessible to everyone, not
+                            just the privileged few. Founded in 2023, Scalar is dedicated to helping individuals and
+                            families plan for a brighter future. Our mission is to provide the tools, guidance, and
+                            services necessary to build financial security and generational wealth.</p>
+                        <br>
+                        <p>
+                            Explore our range of financial services tailored to your needs.
+
+                        </p>
+                        <p>Connect with certified professionals who understand and support your financial
+                            journey.
+                        </p>
+                        <p>Join us on the path to financial freedom and prosperity.</p>
+                        <p>Welcome to Scalar Finances – Your Partner in Building a Better Tomorrow.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="video-box">
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content text-center">
+                                    <img src="{{ imageFile('about/video-gallery.jpg') }}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End welcome area-->
     <!--Start faq content area-->
     <section class="faq-content-area">
         <div class="container">

@@ -41,7 +41,8 @@
                         <div class="subscribe-form">
                             <p>Sign up today for hints, tips and the latest product news - plus exclusive special
                                 offers.</p>
-                            <form action="#">
+                            <form action="{{ route('user.subscribe') }}" method="POST">
+                                @csrf
                                 <input type="text" name="email" placeholder="Enter Your Email">
                                 <button type="submit"><span class="flaticon-e-mail-envelope"></span></button>
                                 <h5>We never spam!</h5>
@@ -60,7 +61,7 @@
                                     <div class="item active">
                                         <div class="single-contact-address">
                                             <ul>
-                                                <li class="title">United States Office</li>
+                                                <li class="title"> Office</li>
                                                 <li>
                                                     <div class="icon-holder map">
                                                         <span class="flaticon-signs"></span>
@@ -74,7 +75,7 @@
                                                         <span class="flaticon-phone-call"></span>
                                                     </div>
                                                     <div class="content-holder">
-                                                        <p>Call us: >{{ getPhone() }}</p>
+                                                        <p>Call us: {{ getPhone() }}</p>
                                                     </div>
                                                 </li>
                                                 <li>
@@ -85,14 +86,7 @@
                                                         <p>Mail us : {{ getEmail() }}</p>
                                                     </div>
                                                 </li>
-                                                <li>
-                                                    <div class="icon-holder">
-                                                        <span class="flaticon-clock"></span>
-                                                    </div>
-                                                    <div class="content-holder">
-                                                        <p>Mon - Sat 9.00 - 20.00,<br>Sunday CLOSED</p>
-                                                    </div>
-                                                </li>
+
                                             </ul>
                                         </div>
                                     </div>

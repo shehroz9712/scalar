@@ -24,8 +24,8 @@
 
                                     </h3>
                                     <div class="buttons">
-                                        <a class="hvr-sweep-to-bottom" href="#">Contact us</a>
-                                        <a class="black-bg hvr-sweep-to-bottom" href="#">Our Services</a>
+                                        <a class="black-bg hvr-sweep-to-bottom" href="{{ route('user.form') }}">Get
+                                            Started</a>
                                     </div>
                                 </div>
                             </div>
@@ -40,12 +40,13 @@
                                 data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
                                 data-splitin="none" data-splitout="none" data-responsive_offset="on" data-start="1000">
                                 <div class="slide-content-box">
-                                    <h1>New Standards of<br>Excellence</h1>
-                                    <h3>Our Scalar company offers a full range of <br>consulting services in all the
-                                        countries</h3>
+                                    <h1>Welcome to Scalar Finances</h1>
+                                    <h3> Where Financial Wellness is Within Reach
+
+                                    </h3>
                                     <div class="buttons">
-                                        <a class="hvr-sweep-to-bottom" href="#">Contact us</a>
-                                        <a class="black-bg hvr-sweep-to-bottom" href="#">Our Services</a>
+                                        <a class="black-bg hvr-sweep-to-bottom" href="{{ route('user.form') }}">Get
+                                            Started</a>
                                     </div>
                                 </div>
                             </div>
@@ -57,18 +58,6 @@
             </section>
             <!--End Rev Slider Wrapper-->
 
-            <!--Start call to action area-->
-            <section class="call-to-action-area">
-                <div class="container">
-                    <div class="title pull-left">
-                        <h2>Scalar & Company is one of the world's leading management consulting firms.</h2>
-                    </div>
-                    <div class="button pull-right">
-                        <a class="hvr-sweep-to-bottom" href="#">request quote</a>
-                    </div>
-                </div>
-            </section>
-            <!--End call to action area-->
 
             <!--Start welcome area-->
             <section class="welcome-area">
@@ -86,29 +75,24 @@
                                     just the privileged few. Founded in 2023, Scalar is dedicated to helping individuals and
                                     families plan for a brighter future. Our mission is to provide the tools, guidance, and
                                     services necessary to build financial security and generational wealth.</p>
-                                <ul>
-                                    <li>
-                                        Explore our range of financial services tailored to your needs.
+                                <br>
+                                <p>
+                                    Explore our range of financial services tailored to your needs.
 
-                                    </li>
-                                    <li>Connect with certified professionals who understand and support your financial
-                                        journey.
-                                    </li>
-                                    <li>Join us on the path to financial freedom and prosperity.</li>
-
-                                </ul>
+                                </p>
+                                <p>Connect with certified professionals who understand and support your financial
+                                    journey.
+                                </p>
+                                <p>Join us on the path to financial freedom and prosperity.</p>
                                 <p>Welcome to Scalar Finances – Your Partner in Building a Better Tomorrow.</p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                             <div class="video-box">
-                                <img src="{{ imageFile('resources/video-bg.jpg') }}" alt="Awesome Image">
                                 <div class="overlay">
                                     <div class="box">
                                         <div class="content text-center">
-                                            <a class="video-popup" href="https://www.youtube.com/watch?v=KssOT2QVg-M"><img
-                                                    src="{{ imageFile('resources/play-btn.png') }}"
-                                                    alt="Awesome Image" /></a>
+                                            <img src="{{ imageFile('about/video-gallery.jpg') }}" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -144,7 +128,8 @@
                                 </div>
                                 <div class="content">
                                     <h3>Pay for Success</h3>
-                                    <p>We are focused on developing a field through market bonds, traders..</p>
+                                    <p>Title change to Our Services are free; sub-copy changed to "our matching services are
+                                        free and confidential"</p>
                                 </div>
                             </div>
                         </div>
@@ -157,7 +142,10 @@
                                 </div>
                                 <div class="content">
                                     <h3>Tailor-Made Solutions</h3>
-                                    <p>We Providing you with optimal solutions from Investment Banking.</p>
+                                    <p>Title is good, copy change to (you can wordsmith this) "Each individuals needs are
+                                        different, we set out to match you with the right advisor for where you are today
+                                        and where you want to be tomorrow"
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -181,7 +169,7 @@
                             <div class="single-fact-counter">
                                 <span class="timer" data-from="0" data-to="107" data-speed="5000"
                                     data-refresh-interval="50">107</span>
-                                <h3>Experienced Consultants</h3>
+                                <h3>Advisors in Network</h3>
                             </div>
                         </div>
                         <!--End single fact counter-->
@@ -190,7 +178,7 @@
                             <div class="single-fact-counter">
                                 <span class="timer" data-from="50" data-to="2000" data-speed="5000"
                                     data-refresh-interval="50">2000</span>
-                                <h3>Projects Completed</h3>
+                                <h3>Consumers Matched</h3>
                             </div>
                         </div>
                         <!--End single fact counter-->
@@ -200,7 +188,7 @@
                                 <span class="timer" data-from="0" data-to="100" data-speed="5000"
                                     data-refresh-interval="50">100</span>
                                 <i class="fa fa-percent" aria-hidden="true"></i>
-                                <h3>Satisfied Customers</h3>
+                                <h3>Customer Satisfaction </h3>
                             </div>
                         </div>
                         <!--End single fact counter-->
@@ -215,7 +203,7 @@
                     <div class="row">
                         <div class="col-md-5">
                             <div class="sec-title">
-                                <h1>Industry Expertise</h1>
+                                <h1>Advisor Experience</h1>
                                 <span class="border"></span>
                             </div>
                         </div>
@@ -235,9 +223,9 @@
                                     <span class="flaticon-business-2"></span>
                                 </div>
                                 <div class="content">
-                                    <h3>Financial Services</h3>
-                                    <p>We help financial institutions, from banking and insurance to wealth management and
-                                        securities </p>
+                                    <h3>New College Graduates</h3>
+                                    <p>Our advisors can set you up for long term success while you're just getting started
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -249,9 +237,8 @@
                                     <span class="flaticon-icon-1532"></span>
                                 </div>
                                 <div class="content">
-                                    <h3>Industrial Goods & Services</h3>
-                                    <p>Focused on helping our industrial clients, across all sectors to deliver sustainable
-                                        results. </p>
+                                    <h3>Experienced Professionals</h3>
+                                    <p>Capitalize on alternative investment opportunities beyond your 401K </p>
                                 </div>
                             </div>
                         </div>
@@ -263,9 +250,9 @@
                                     <span class="flaticon-business-2"></span>
                                 </div>
                                 <div class="content">
-                                    <h3>Airlines & Transportation</h3>
-                                    <p>We help financial institutions, from banking and insurance to wealth management and
-                                        securities </p>
+                                    <h3>Planning for College</h3>
+                                    <p>Planning for costly college education can be scary, our advisors are here to help
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -277,9 +264,8 @@
                                     <span class="flaticon-networking"></span>
                                 </div>
                                 <div class="content">
-                                    <h3>Oil & Gas Companies</h3>
-                                    <p>Scalar supports oil and gas companies' critical decisions across a broad operational
-                                        functions.</p>
+                                    <h3>Planning for Retirement</h3>
+                                    <p>Putting your retirement concerns at ease</p>
                                 </div>
                             </div>
                         </div>
@@ -291,9 +277,8 @@
                                     <span class="flaticon-medical"></span>
                                 </div>
                                 <div class="content">
-                                    <h3>Healthcare Companies</h3>
-                                    <p>Healthcare companies must identify patients, fuel innovation and reduce the cost and
-                                        complexity.</p>
+                                    <h3>Navigating Student Debt</h3>
+                                    <p>Our advisors are here to help navigate complicated payment structures</p>
                                 </div>
                             </div>
                         </div>
@@ -305,10 +290,10 @@
                                     <span class="flaticon-technology"></span>
                                 </div>
                                 <div class="content">
-                                    <h3>Telecommunications</h3>
-                                    <p>The challenge telecommunications companies is choosing where and how to participate
-                                        in
-                                        the markets.</p>
+                                    <h3>Planning for Uncertainty</h3>
+                                    <p>Life can be anything but simple, let our advisors help you plan for unforeseen
+                                        events.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -324,28 +309,12 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div id="caption-carousel" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#caption-carousel" data-slide-to="0" class="active"></li>
-                                    <li data-target="#caption-carousel" data-slide-to="1"></li>
-                                    <li data-target="#caption-carousel" data-slide-to="2"></li>
-                                </ol>
+
                                 <div class="carousel-inner text-center" role="listbox">
                                     <div class="item active">
                                         <div class="single-caption-carousel-item">
-                                            <h1>Our mission is to help our clients set new standards of excellence in their
-                                                industries</h1>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="single-caption-carousel-item">
-                                            <h1>Our mission is to help our clients set new standards of excellence in their
-                                                industries</h1>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="single-caption-carousel-item">
-                                            <h1>Our mission is to help our clients set new standards of excellence in their
-                                                industries</h1>
+                                            <h1>our mission is to help everyone achieve their financial goals by connecting
+                                                them with the right professional to meet their needs</h1>
                                         </div>
                                     </div>
                                 </div>
@@ -356,68 +325,7 @@
             </section>
             <!--Start caption area-->
 
-            <!--Start how work and faq area-->
-            <section class="how-work-and-faq-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                            <div class="how-we-work-content">
-                                <div class="sec-title">
-                                    <h1>How We Work & FAQ’s</h1>
-                                    <span class="border"></span>
-                                </div>
-                                <h3>I am so clever that sometimes I do not get a single word of what I am saying and get
-                                    very
-                                    confused. </h3>
-                                <div class="content-and-video-gallery-holder">
-                                    <div class="video-gallery">
-                                        <img src="{{ imageFile('resources/how-we-work-video-gallery.jpg') }}"
-                                            alt="Awesome Image">
-                                        <div class="overlay">
-                                            <div class="box">
-                                                <div class="content text-center">
-                                                    <a class="video-popup"
-                                                        href="https://www.youtube.com/watch?v=KssOT2QVg-M"><img
-                                                            src="{{ imageFile('resources/play-btn.png') }}"
-                                                            alt="Awesome Image" /></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="content-holder">
-                                        <p>We are a Scalar consulting company, located in UK. We’ve had the privilege to
-                                            work
-                                            with some of the largest consulting company in a reputation for always bringing
-                                            for
-                                            innovation to the table project.</p>
-                                        <a href="#">Know mroe about us<i class="fa fa-angle-double-right"
-                                                aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                            <div class="faq-content">
-                                <div class="accordion-box">
-                                    @foreach ($faqs as $faq)
-                                        <!--Start single accordion box-->
-                                        <div class="accordion accordion-block">
-                                            <div class="accord-btn">
-                                                <h4>{{ $faq->question }}?</h4>
-                                            </div>
-                                            <div class="accord-content">
-                                                <p>{{ $faq->answer }}.</p>
-                                            </div>
-                                        </div>
-                                        <!--End single accordion box-->
-                                    @endforeach
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--End how we work and faq area-->
+
 
             <!--Start testimonial carousel area-->
             <section class="testimonial-carousel-area">
@@ -434,8 +342,8 @@
                                                         alt="Awesome Image">
                                                 </div>
                                                 <div class="content">
-                                                    <h2>“ Scalar has helped us to just have a better handleon everything in
-                                                        our business ” </h2>
+                                                    <h2>“ Scalars process was intuitive and helped me find the right advisor
+                                                        to fit my needs ” </h2>
                                                     <h4>Mark Vilton - Villo Finance Ceo</h4>
                                                 </div>
                                             </div>
@@ -447,74 +355,15 @@
                                                         alt="Awesome Image">
                                                 </div>
                                                 <div class="content">
-                                                    <h2>“ Scalar has helped us to just have a better handleon everything in
-                                                        our business ” </h2>
+                                                    <h2>“ Scalar removes to guesswork from finding the perfect financial
+                                                        advisor for me and my family” </h2>
                                                     <h4>Mark Vilton - Villo Finance Ceo</h4>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
-                                <li>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="single-item">
-                                                <div class="img-holder">
-                                                    <img src="{{ imageFile('resources/testimonial-carousel-1.png') }}"
-                                                        alt="Awesome Image">
-                                                </div>
-                                                <div class="content">
-                                                    <h2>“ Scalar has helped us to just have a better handleon everything in
-                                                        our business ” </h2>
-                                                    <h4>Mark Vilton - Villo Finance Ceo</h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="single-item">
-                                                <div class="img-holder">
-                                                    <img src="{{ imageFile('resources/testimonial-carousel-2.png') }}"
-                                                        alt="Awesome Image">
-                                                </div>
-                                                <div class="content">
-                                                    <h2>“ Scalar has helped us to just have a better handleon everything in
-                                                        our business ” </h2>
-                                                    <h4>Mark Vilton - Villo Finance Ceo</h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="single-item">
-                                                <div class="img-holder">
-                                                    <img src="{{ imageFile('resources/testimonial-carousel-1.png') }}"
-                                                        alt="Awesome Image">
-                                                </div>
-                                                <div class="content">
-                                                    <h2>“ Scalar has helped us to just have a better handleon everything in
-                                                        our business ” </h2>
-                                                    <h4>Mark Vilton - Villo Finance Ceo</h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="single-item">
-                                                <div class="img-holder">
-                                                    <img src="{{ imageFile('resources/testimonial-carousel-2.png') }}"
-                                                        alt="Awesome Image">
-                                                </div>
-                                                <div class="content">
-                                                    <h2>“ Scalar has helped us to just have a better handleon everything in
-                                                        our business ” </h2>
-                                                    <h4>Mark Vilton - Villo Finance Ceo</h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
+
                             </ul>
                         </div>
                     </div>
@@ -622,30 +471,64 @@
                                     <h1>Request a Call Back.</h1>
                                     <span class="border"></span>
                                 </div>
-                                <form action="#">
+                                <form action="{{ route('user.contact.submit') }}" method="POST">
+                                    @csrf
+
                                     <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="select-field">
-                                                <select class="selectpicker" name="interest">
-                                                    <option>Choose Your Topic of Interest</option>
-                                                    <option>Choose Your Topic of Interest One</option>
-                                                    <option>Choose Your Topic of Interest Two</option>
-                                                    <option>Choose Your Topic of Interest Three</option>
-                                                </select>
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                <input type="text"
+                                                    class="form-control {{ $errors->has('name') ? ' is-invalid' : '' }}"
+                                                    placeholder="Your Name*" name="name">
+                                                @error('name')
+                                                    <span class="error">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                <input type="text"
+                                                    class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}"
+                                                    placeholder="Email Address*" name="email">
+                                                @error('email')
+                                                    <span class="error">{{ $message }}</span>
+                                                @enderror
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
+
                                         <div class="col-md-6">
-                                            <input type="text" name="name" placeholder="Your Name *">
+                                            <div class="input-field">
+                                                <input type="text"
+                                                    class="form-control {{ $errors->has('subject') ? ' is-invalid' : '' }}"
+                                                    placeholder="Subject" name="subject">
+                                                @error('subject')
+                                                    <span class="error">{{ $message }}</span>
+                                                @enderror
+                                            </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <input type="text" name="email" placeholder="Your Mail *">
+                                            <div class="input-field">
+                                                <input type="text"
+                                                    class="form-control {{ $errors->has('phone') ? ' is-invalid' : '' }}"
+                                                    placeholder="Phone" name="phone">
+                                                @error('phone')
+                                                    <span class="error">{{ $message }}</span>
+                                                @enderror
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-6">
-                                            <input type="text" name="phone" placeholder="Phone Number *">
+                                        <div class="col-md-12">
+                                            <div class="input-field">
+
+                                                <textarea placeholder="Message*" class="form-control {{ $errors->has('message') ? ' is-invalid' : '' }}"
+                                                    name="message"></textarea>
+                                                @error('message')
+                                                    <span class="error">{{ $message }}</span>
+                                                @enderror
+                                            </div>
                                         </div>
                                         <div class="col-md-6">
                                             <button class="hvr-sweep-to-bottom" type="submit">Submit</button>
@@ -659,7 +542,8 @@
                                                 our
                                                 short feedback form or you can also send us an <span>email</span> and we’ll
                                                 get
-                                                in touch shortly, or Troll Free Number <span>- (+91) 00-700-6202.</span></p>
+                                                in touch shortly, or Troll Free Number <span>- {{ getphone() }}.</span>
+                                            </p>
 
                                             <p><strong>Office Hours :</strong> 07:30 and 19:00 Mon to Sat, Sun - Holiday</p>
                                         </div>

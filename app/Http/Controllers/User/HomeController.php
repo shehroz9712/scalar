@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\User;;
 
 use App\Http\Requests\ContactFormRequest;
+use App\Http\Requests\NewLetterStore;
 use App\Models\Contact;
 use App\Models\Faq;
+use App\Models\NewLetter;
 use App\Models\Review;
 use App\Models\Saloon;
 use App\Models\Service;
@@ -63,6 +65,17 @@ class HomeController extends Controller
             'message' => $request->input('message'),
         ]);
 
-        return redirect()->back()->with('success', 'Your message has been submitted successfully!');
+        return redirect()->back()->with('success', 'Your info has been submitted successfully!');
+    }
+    public function subscribe(NewLetterStore $request)
+    {
+
+
+        NewLetter::create([
+            'email' => $request->input('email'),
+
+        ]);
+
+        return redirect()->back()->with('success', 'Your email has been submitted successfully!');
     }
 }

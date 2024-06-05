@@ -40,12 +40,7 @@
                             <span class="border"></span>
                         </div>
 
-                        <p>The "About Us" section is crucial for introducing your business to visitors and
-                            establishing trust. We would appreciate it if you could provide us with the history and
-                            background of your company to include in this section. This will help us craft a compelling
-                            narrative that resonates with your audience and showcases your unique story.</p>
-                        <br>
-
+                        <p>
                         <ul>
                             <li>Who we are section: "Scalar was founded with one goal in mind, to help those often
                                 overlooked gain access to financial resources typically reserved for the wealthy. We aim to

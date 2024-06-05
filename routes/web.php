@@ -30,6 +30,7 @@ Route::name('user.')->group(
 
         Route::get('/contact', 'HomeController@contact')->name('contact');
         Route::post('/contact', 'HomeController@submit')->name('contact.submit');
+        Route::post('/subscribe', 'HomeController@subscribe')->name('subscribe');
 
         Route::get('/form', 'HomeController@form')->name('form');
 

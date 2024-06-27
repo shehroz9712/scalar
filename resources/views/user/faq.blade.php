@@ -86,7 +86,7 @@
                             </div>
                         </div>
                         <div class="text-holder">
-                            <p>Statisitc over 20 years of experience we’ll ensure you always get the best guidance. We
+                            <p>Statisitc over 25 years of experience we’ll ensure you always get the best guidance. We
                                 serve clients at every level of their organization, in whatever capacity we can be most
                                 useful, whether as a trusted advisor to top management or as a hands-on coach for front
                                 line employees. For every engagement, we assemble a uts team with the most appropriate

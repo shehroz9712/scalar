@@ -207,7 +207,7 @@
     <section class="slogan-area">
         <div class="container">
             <div class="title pull-left">
-                <h2>Over 20 years of experience we’ll ensure you always get the best guidance.</h2>
+                <h2>Over 25 years of experience we’ll ensure you always get the best guidance.</h2>
             </div>
             <div class="buttons pull-right">
                 <a href="#" class="hvr-sweep-to-bottom">request quote</a>

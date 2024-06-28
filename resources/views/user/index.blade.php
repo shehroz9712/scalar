@@ -1,5 +1,22 @@
 @extends('user.layouts.app')
+
 @section('css')
+<style>
+    .rev_slider_wrapper .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Change the color and opacity as needed */
+    z-index: 1;
+}
+.rev_slider_wrapper .slide-content-box {
+    position: relative;
+    z-index: 2;
+}
+
+</style>
 @endsection
 @section('content')
     <div class="container-fluid dashboard-default-sec">
@@ -12,6 +29,8 @@
                             <img src="{{ imageFile('slides/2.jpg') }}" alt="" width="1920" height="695"
                                 data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat"
                                 data-bgparallax="1">
+                                <div class="overlay"></div>
+
                             <div class="tp-caption tp-resizeme" data-x="right" data-hoffset="0" data-y="center"
                                 data-voffset="0" data-transform_idle="o:1;"
                                 data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;"
@@ -34,6 +53,8 @@
                             <img src="{{ imageFile('slides/3.jpg') }}" alt="" width="1920" height="695"
                                 data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat"
                                 data-bgparallax="2">
+                                <div class="overlay"></div>
+
                             <div class="tp-caption tp-resizeme" data-x="left" data-hoffset="0" data-y="center"
                                 data-voffset="0" data-transform_idle="o:1;"
                                 data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
@@ -92,7 +113,7 @@
                                 <div class="overlay">
                                     <div class="box">
                                         <div class="content text-center">
-                                            <img src="{{ imageFile('about/video-gallery.jpg') }}" alt="">
+                                            <img src="{{ imageFile('about/video-gallery.jpg') }}" style="width: 100%" alt="">
                                         </div>
                                     </div>
                                 </div>

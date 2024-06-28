@@ -266,10 +266,18 @@
                                         </div>
                                         <div class="input-group">
                                             <label>Tell us about your family plans:</label>
+                                        </div>
+                                        <div class="input-group">
                                             <label><input type="checkbox" name="familyPlans" value="spouse"> I have a
                                                 spouse/partner or plan to marry</label>
+
+                                            </div>
+                                            <div class="input-group">
                                             <label><input type="checkbox" name="familyPlans" value="kids"> I have or plan
                                                 to have kids</label>
+
+                                            </div>
+                                            <div class="input-group">
                                             <label><input type="checkbox" name="familyPlans" value="others"> I have others
                                                 I’d like to support (Parents, Siblings, etc.)</label>
                                         </div>
@@ -285,12 +293,18 @@
                                             <label>How much does your household make per year before taxes?</label>
                                             <div>
                                                 <input type="radio" name="annualIncome" value="0-25k" required> $0-$25k
-                                                <input type="radio" name="annualIncome" value="25-50k" required> $25k-$50k
-                                                <input type="radio" name="annualIncome" value="50-75k" required> $50k-$75k
+                                            </div>
+                                            <div class="input-group">
+                                                <input type="radio" name="annualIncome" value="25-50k" required> $25k-$50k   </div>
+                                                <div class="input-group">
+                                                <input type="radio" name="annualIncome" value="50-75k" required> $50k-$75k   </div>
+                                                <div class="input-group">
                                                 <input type="radio" name="annualIncome" value="75-100k" required>
-                                                $75k-$100k
+                                                $75k-$100k   </div>
+                                                <div class="input-group">
                                                 <input type="radio" name="annualIncome" value="100-150k" required>
-                                                $100k-$150k
+                                                $100k-$150k   </div>
+                                                <div class="input-group">
                                                 <input type="radio" name="annualIncome" value="150k+" required> $150k+
                                             </div>
                                         </div>

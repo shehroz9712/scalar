@@ -229,7 +229,7 @@ input:-webkit-autofill:focus {
     width: 60px;
     height: 60px;
     line-height: 50px;
-    color: #3A75C4;
+    color: #ffffff;
     cursor: pointer;
     display: none;
     z-index: 99999;
@@ -241,7 +241,7 @@ input:-webkit-autofill:focus {
 
 .scroll-to-top:hover {
     border: 3px solid #0b1119;
-    color: #ffffff;
+    color: #3A75C4;
     background: none;
 }
 

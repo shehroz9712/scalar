@@ -4,7 +4,6 @@
 
 
 
-@yield('meta')
 
 @include('user.layouts.partials.head')
 

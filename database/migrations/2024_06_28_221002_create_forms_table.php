@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('forms', function (Blueprint $table) {
             $table->id();
             $table->string('age');
-            $table->string('partner');
-            $table->string('kids');
-            $table->string('support');
+            $table->string('partner')->nullable();
+            $table->string('kids')->nullable();
+            $table->string('support')->nullable();
             $table->string('annualIncome');
             $table->string('homeOwnership');
             $table->text('advisor');

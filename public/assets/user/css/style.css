@@ -4959,7 +4959,7 @@ input:-webkit-autofill:focus {
 }
 
 .google-map-area .overlay {
-    background: rgba(0, 0, 0, 0) url("../img/resources/contact-address-bg.png") no-repeat scroll 0 0 / cover;
+    background: #3A75C4;
     bottom: -10px;
     display: block;
     overflow: hidden;

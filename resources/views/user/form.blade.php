@@ -138,22 +138,22 @@
 
         #progressbar #goals:before {
             font-family: FontAwesome;
-            content: "\f013"
+            content: "\f201";
         }
 
         #progressbar #financials:before {
             font-family: FontAwesome;
-            content: "\f09d"
+            content: "\f0d6";
         }
 
         #progressbar #advisor:before {
             font-family: FontAwesome;
-            content: "\f0e2"
+            content: "\f0c0";
         }
 
         #progressbar #personal:before {
             font-family: FontAwesome;
-            content: "\f007"
+            content: "\f007";
         }
 
         #progressbar #confirm:before {

@@ -253,7 +253,7 @@
                                 <fieldset>
                                     <div class="form-card">
                                         <h2 class="fs-title">Financial Goals:</h2>
-                                        <div class="input-field">
+                                        <div class="input-group">
                                             <label>At what age do you want to retire?</label>
                                             <select class="form-control" name="retirementDate" required>
                                                 <option value="45-50">45-50</option>
@@ -264,7 +264,7 @@
                                                 <option value="70-75">70-75</option>
                                             </select>
                                         </div>
-                                        <div class="input-field">
+                                        <div class="input-group">
                                             <label>Tell us about your family plans:</label>
                                             <label><input type="checkbox" name="familyPlans" value="spouse"> I have a
                                                 spouse/partner or plan to marry</label>
@@ -281,7 +281,7 @@
                                 <fieldset>
                                     <div class="form-card">
                                         <h2 class="fs-title">Current Financials:</h2>
-                                        <div class="input-field">
+                                        <div class="input-group">
                                             <label>How much does your household make per year before taxes?</label>
                                             <div>
                                                 <input type="radio" name="annualIncome" value="0-25k" required> $0-$25k
@@ -294,7 +294,7 @@
                                                 <input type="radio" name="annualIncome" value="150k+" required> $150k+
                                             </div>
                                         </div>
-                                        <div class="input-field">
+                                        <div class="input-group">
                                             <label>Do you own or rent your home?</label>
                                             <input type="radio" name="homeOwnership" value="rent" required> Rent
                                             <input type="radio" name="homeOwnership" value="own" required> Own
@@ -309,26 +309,26 @@
                                 <fieldset>
                                     <div class="form-card">
                                         <h2 class="fs-title">Advisor:</h2>
-                                        <div class="input-field">
+                                        <div class="input-group">
                                             <label for="importantAttribute">What attribute is most important for you when
                                                 thinking about your future financial advisor? (Open form, word limit 200
                                                 characters)</label>
                                             <textarea class="form-control" id="importantAttribute" name="importantAttribute" maxlength="200" rows="4"
                                                 required></textarea>
                                         </div>
-                                        <div class="input-field">
+                                        <div class="input-group">
                                             <label>Do you want your advisor to be local?</label>
                                             <select class="form-control" name="localAdvisor" required>
                                                 <option value="yes">Yes</option>
                                                 <option value="no">No</option>
                                             </select>
                                         </div>
-                                        <div class="input-field">
+                                        <div class="input-group">
                                             <label for="languagePreference">Language preference for your advisor</label>
                                             <input type="text" class="form-control" id="languagePreference"
                                                 name="languagePreference" required>
                                         </div>
-                                        <div class="input-field">
+                                        <div class="input-group">
                                             <label for="otherConsiderations">Other information you're considering when
                                                 choosing an advisor?</label>
                                             <textarea class="form-control" id="otherConsiderations" name="otherConsiderations" rows="4"></textarea>
@@ -344,30 +344,30 @@
                                 <fieldset>
                                     <div class="form-card">
                                         <h2 class="fs-title">Tell Us About Yourself:</h2>
-                                        <div class="input-field">
+                                        <div class="input-group">
                                             <input type="text" class="form-control"
                                                 placeholder="What is your first name?" name="firstName" required>
                                         </div>
-                                        <div class="input-field">
+                                        <div class="input-group">
                                             <input type="text" class="form-control"
                                                 placeholder="Nice to meet you, [First Name]. What is your last name?"
                                                 name="lastName" required>
                                         </div>
-                                        <div class="input-field">
+                                        <div class="input-group">
                                             <input type="email" class="form-control"
                                                 placeholder="Please provide your email address" name="email" required>
                                         </div>
-                                        <div class="input-field">
+                                        <div class="input-group">
                                             <input type="text" class="form-control"
                                                 placeholder="What is a good phone number to reach you?" name="phone"
                                                 pattern="\d{3}-\d{3}-\d{4}" required>
                                         </div>
-                                        <div class="input-field">
+                                        <div class="input-group">
                                             <label>What is your birth Month year?</label>
                                             <input type="month" class="form-control" placeholder="2024"
                                                 name="birthYear" required>
                                         </div>
-                                        <div class="input-field">
+                                        <div class="input-group">
                                             <input type="text" class="form-control"
                                                 placeholder="What is your ZIP code?" name="zipCode" pattern="\d{5}"
                                                 required>
@@ -474,7 +474,7 @@
             // Form validation setup
             $("#msform").validate({
                 errorPlacement: function(error, element) {
-                    element.closest('.input-field').append(error);
+                    element.closest('.input-group').append(error);
                 }
             });
 

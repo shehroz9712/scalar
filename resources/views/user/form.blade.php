@@ -1,15 +1,19 @@
 @extends('user.layouts.app')
 @section('css')
     <style>
-        p {
-            color: grey
+        label {
+            display: block;
         }
 
-        #heading {
-            text-transform: uppercase;
-            color: #e59b60;
-            font-weight: normal
+        .mt-5 {
+            margin-top: 5rem;
         }
+
+        .input-group {
+            display: block;
+        }
+
+
 
         #msform {
             text-align: center;
@@ -41,20 +45,20 @@
             -moz-box-shadow: none !important;
             -webkit-box-shadow: none !important;
             box-shadow: none !important;
-            border: 1px solid #e59b60;
+            border: 1px solid #3A75C4;
             outline-width: 0
         }
 
         #msform .action-button {
             width: 100px;
-            background: #e59b60;
+            background: #3A75C4;
             font-weight: bold;
             color: white;
             border: 0 none;
             border-radius: 0px;
             cursor: pointer;
             padding: 10px 5px;
-            margin: 10px 0px 10px 5px;
+            margin: 20px 0px 10px 5px;
             float: right
         }
 
@@ -72,7 +76,7 @@
             border-radius: 0px;
             cursor: pointer;
             padding: 10px 5px;
-            margin: 10px 5px 10px 0px;
+            margin: 20px 5px 10px 0px;
             float: right
         }
 
@@ -89,14 +93,14 @@
 
         .fs-title {
             font-size: 25px;
-            color: #e59b60;
+            color: #3A75C4;
             margin-bottom: 15px;
             font-weight: normal;
             text-align: left
         }
 
         .purple-text {
-            color: #e59b60;
+            color: #3A75C4;
             font-weight: normal
         }
 
@@ -120,7 +124,7 @@
         }
 
         #progressbar .active {
-            color: #e59b60
+            color: #3A75C4
         }
 
         #progressbar li {
@@ -183,7 +187,7 @@
 
         #progressbar li.active:before,
         #progressbar li.active:after {
-            background: #e59b60
+            background: #3A75C4
         }
 
         .progress {
@@ -191,7 +195,7 @@
         }
 
         .progress-bar {
-            background-color: #e59b60
+            background-color: #3A75C4
         }
 
         .fit-image {
@@ -235,7 +239,8 @@
                 <div class="col-md-12">
                     <div class="contact-form">
                         <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
-                            <form id="msform">
+                            <form id="msform" action="{{ route('user.submit-form') }}" method="POST">
+                                @csrf
                                 <!-- progressbar -->
                                 <ul id="progressbar">
                                     <li class="active" id="goals"><strong>Financial Goals</strong></li>
@@ -253,35 +258,35 @@
                                 <fieldset>
                                     <div class="form-card">
                                         <h2 class="fs-title">Financial Goals:</h2>
-                                        <div class="input-group">
+                                        <div class="input-group mb-3">
                                             <label>At what age do you want to retire?</label>
-                                            <select class="form-control" name="retirementDate" required>
-                                                <option value="45-50">45-50</option>
-                                                <option value="50-55">50-55</option>
-                                                <option value="55-60">55-60</option>
-                                                <option value="60-65">60-65</option>
-                                                <option value="65-70">65-70</option>
-                                                <option value="70-75">70-75</option>
+                                            <select class="form-control" name="age" required>
+                                                <option value="45-50">45 - 50</option>
+                                                <option value="50-55">50 - 55</option>
+                                                <option value="55-60">55 - 60</option>
+                                                <option value="60-65">60 - 65</option>
+                                                <option value="65-70">65 - 70</option>
+                                                <option value="70-75">70 - 75</option>
                                             </select>
                                         </div>
                                         <div class="input-group">
                                             <label>Tell us about your family plans:</label>
                                         </div>
                                         <div class="input-group">
-                                            <label><input type="checkbox" name="familyPlans" value="spouse"> I have a
+                                            <label><input type="checkbox" name="partner" value="spouse"> I have a
                                                 spouse/partner or plan to marry</label>
 
-                                            </div>
-                                            <div class="input-group">
-                                            <label><input type="checkbox" name="familyPlans" value="kids"> I have or plan
+                                        </div>
+                                        <div class="input-group">
+                                            <label><input type="checkbox" name="kids" value="kids"> I have or plan
                                                 to have kids</label>
 
-                                            </div>
-                                            <div class="input-group">
-                                            <label><input type="checkbox" name="familyPlans" value="others"> I have others
+                                        </div>
+                                        <div class="input-group">
+                                            <label><input type="checkbox" name="support" value="others"> I have others
                                                 I’d like to support (Parents, Siblings, etc.)</label>
                                         </div>
-                                        <input type="button" name="next" class="next action-button" value="Next" />
+                                        <button type="button" class="next action-button" value="Next">Next</button>
                                     </div>
                                 </fieldset>
 
@@ -291,31 +296,30 @@
                                         <h2 class="fs-title">Current Financials:</h2>
                                         <div class="input-group">
                                             <label>How much does your household make per year before taxes?</label>
-                                            <div>
-                                                <input type="radio" name="annualIncome" value="0-25k" required> $0-$25k
-                                            </div>
-                                            <div class="input-group">
-                                                <input type="radio" name="annualIncome" value="25-50k" required> $25k-$50k   </div>
-                                                <div class="input-group">
-                                                <input type="radio" name="annualIncome" value="50-75k" required> $50k-$75k   </div>
-                                                <div class="input-group">
-                                                <input type="radio" name="annualIncome" value="75-100k" required>
-                                                $75k-$100k   </div>
-                                                <div class="input-group">
-                                                <input type="radio" name="annualIncome" value="100-150k" required>
-                                                $100k-$150k   </div>
-                                                <div class="input-group">
-                                                <input type="radio" name="annualIncome" value="150k+" required> $150k+
-                                            </div>
+                                            <select name="annualIncome" class="form-control" required>
+                                                <option value="" disabled selected>Select your income range</option>
+                                                <option value="0-25k">$0 - $25k</option>
+                                                <option value="25-50k">$25k - $50k</option>
+                                                <option value="50-75k">$50k - $75k</option>
+                                                <option value="75-100k">$75k - $100k</option>
+                                                <option value="100-150k">$100k - $150k</option>
+                                                <option value="150k+">$150k+</option>
+                                            </select>
                                         </div>
                                         <div class="input-group">
                                             <label>Do you own or rent your home?</label>
-                                            <input type="radio" name="homeOwnership" value="rent" required> Rent
-                                            <input type="radio" name="homeOwnership" value="own" required> Own
+                                            <select name="homeOwnership" class="form-control" required>
+                                                <option value="" disabled selected>Select your home ownership status
+                                                </option>
+                                                <option value="rent">Rent</option>
+                                                <option value="own">Own</option>
+                                            </select>
                                         </div>
-                                        <input type="button" name="next" class="next action-button" value="Next" />
-                                        <input type="button" name="previous" class="previous action-button-previous"
-                                            value="Previous" />
+
+                                        <button type="button" class="next action-button" value="Next">Next</button>
+                                        <button type="button" class="previous action-button-previous">Previous
+                                        </button>
+
                                     </div>
                                 </fieldset>
 
@@ -327,8 +331,7 @@
                                             <label for="importantAttribute">What attribute is most important for you when
                                                 thinking about your future financial advisor? (Open form, word limit 200
                                                 characters)</label>
-                                            <textarea class="form-control" id="importantAttribute" name="importantAttribute" maxlength="200" rows="4"
-                                                required></textarea>
+                                            <textarea class="form-control" id="importantAttribute" name="advisor" style="width: 100%" required></textarea>
                                         </div>
                                         <div class="input-group">
                                             <label>Do you want your advisor to be local?</label>
@@ -345,12 +348,11 @@
                                         <div class="input-group">
                                             <label for="otherConsiderations">Other information you're considering when
                                                 choosing an advisor?</label>
-                                            <textarea class="form-control" id="otherConsiderations" name="otherConsiderations" rows="4"></textarea>
+                                            <textarea class="form-control" id="otherConsiderations" name="otherConsiderations" style="width: 100%"></textarea>
                                         </div>
-                                        <input type="button" name="next" class="next action-button"
-                                            value="Next" />
-                                        <input type="button" name="previous" class="previous action-button-previous"
-                                            value="Previous" />
+                                        <button type="button" class="next action-button" value="Next">Next</button>
+                                        <button type="button" class="previous action-button-previous">Previous
+                                        </button>
                                     </div>
                                 </fieldset>
 
@@ -358,39 +360,51 @@
                                 <fieldset>
                                     <div class="form-card">
                                         <h2 class="fs-title">Tell Us About Yourself:</h2>
-                                        <div class="input-group">
-                                            <input type="text" class="form-control"
+
+                                        <div class="input-group mt-5">
+                                            <label for="firstName">What is your first name?</label>
+                                            <input type="text" class="form-control" id="firstName"
                                                 placeholder="What is your first name?" name="firstName" required>
                                         </div>
-                                        <div class="input-group">
-                                            <input type="text" class="form-control"
+
+                                        <div class="input-group mt-5">
+                                            <label for="lastName">Nice to meet you, [First Name]. What is your last
+                                                name?</label>
+                                            <input type="text" class="form-control" id="lastName"
                                                 placeholder="Nice to meet you, [First Name]. What is your last name?"
                                                 name="lastName" required>
                                         </div>
-                                        <div class="input-group">
-                                            <input type="email" class="form-control"
+
+                                        <div class="input-group mt-5">
+                                            <label for="email">Please provide your email address</label>
+                                            <input type="email" class="form-control" id="email"
                                                 placeholder="Please provide your email address" name="email" required>
                                         </div>
-                                        <div class="input-group">
-                                            <input type="text" class="form-control"
+
+                                        <div class="input-group mt-5">
+                                            <label for="phone">What is a good phone number to reach you?</label>
+                                            <input type="text" class="form-control" id="phone"
                                                 placeholder="What is a good phone number to reach you?" name="phone"
                                                 pattern="\d{3}-\d{3}-\d{4}" required>
                                         </div>
-                                        <div class="input-group">
-                                            <label>What is your birth Month year?</label>
-                                            <input type="month" class="form-control" placeholder="2024"
+
+                                        <div class="input-group mt-5">
+                                            <label for="birthYear">What is your birth Month year?</label>
+                                            <input type="month" class="form-control" id="birthYear" placeholder="2024"
                                                 name="birthYear" required>
                                         </div>
-                                        <div class="input-group">
-                                            <input type="text" class="form-control"
+
+                                        <div class="input-group mt-5">
+                                            <label for="zipCode">What is your ZIP code?</label>
+                                            <input type="text" class="form-control" id="zipCode"
                                                 placeholder="What is your ZIP code?" name="zipCode" pattern="\d{5}"
                                                 required>
                                         </div>
-                                        <input type="submit" name="submit" class="submit action-button"
-                                            value="Finish" />
-                                        <input type="button" name="previous" class="previous action-button-previous"
-                                            value="Previous" />
+                                        <button type="submit" class="next action-button" value="Next">Finish</button>
+                                        <button type="button" class="previous action-button-previous">Previous
+                                        </button>
                                     </div>
+
                                 </fieldset>
                             </form>
                         </div>
@@ -492,11 +506,7 @@
                 }
             });
 
-            $(".submit").click(function() {
-                // Form submission logic
-                $("#msform").submit(); // Submit the form
-                return false;
-            });
+
         });
     </script>
 @endsection

@@ -3,9 +3,11 @@
 namespace App\Http\Controllers\User;;
 
 use App\Http\Requests\ContactFormRequest;
+use App\Http\Requests\FormServiceRequest;
 use App\Http\Requests\NewLetterStore;
 use App\Models\Contact;
 use App\Models\Faq;
+use App\Models\Form;
 use App\Models\NewLetter;
 use App\Models\Review;
 use App\Models\Saloon;
@@ -77,5 +79,16 @@ class HomeController extends Controller
         ]);
 
         return redirect()->back()->with('success', 'Your email has been submitted successfully!');
+    }
+    public function store(FormServiceRequest $request)
+    {
+        $data = $request->except([
+            '_token'
+        ]);
+        // Create a new record in the database
+        Form::create($data);
+
+        // Redirect to a thank you page or back to the form with a success message
+        return redirect()->back()->with('success', 'Your information has been submitted successfully.');
     }
 }

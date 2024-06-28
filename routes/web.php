@@ -33,6 +33,7 @@ Route::name('user.')->group(
         Route::post('/subscribe', 'HomeController@subscribe')->name('subscribe');
 
         Route::get('/form', 'HomeController@form')->name('form');
+        Route::post('/submit-form', 'HomeController@store')->name('submit-form');
 
         Route::get('/blogs', 'HomeController@home')->name('blogs');
         // Route::get('/blog/{slug}', 'HomeController@home')->name('blog');

@@ -48,7 +48,7 @@
                                 families.</li>
                             <br>
 
-                            <li>We believe financial wellness and security is a right. Our mission is to make the best tools, guidance, services and knowledge available to those who are often overlooked. Through our platform, we connect consumers with certified financial professionals who understand all stages of life to ensure they can enjoy life’s milestones to come, live comfortably in their retirement and build generational wealth. <br>
+                            <li>We believe financial wellness and security is a right. Our mission is to make the best tools, guidance, services and knowledge available to those who are often overlooked. Through our platform, we connect consumers with certified financial professionals who understand all stages of life to ensure they can enjoy life’s milestones to come, live comfortably in their retirement and build generational wealth. <br> <br>
                                  Welcome to your forever journey, welcome to Scalar.</li>
                             <br>
 

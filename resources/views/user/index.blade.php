@@ -87,7 +87,7 @@
                         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                             <div class="content">
                                 <div class="sec-title">
-                                    <h1>Why Scalar Finances, Where Financial Wellness is Within Reach
+                                    <h1>Why Scalar 
                                     </h1>
                                     <span class="border"></span>
                                 </div>
@@ -101,9 +101,11 @@
                                     Explore our range of financial services tailored to your needs.
 
                                 </p>
+                                <br>
                                 <p>Connect with certified professionals who understand and support your financial
                                     journey.
                                 </p>
+                                <br>
                                 <p>Join us on the path to financial freedom and prosperity.</p>
                                 <p>Welcome to Scalar Finances – Your Partner in Building a Better Tomorrow.</p>
                             </div>

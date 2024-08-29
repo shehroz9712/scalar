@@ -276,7 +276,7 @@ input:-webkit-autofill:focus {
     font-size: 40px;
     font-weight: 700;
     line-height: 56px;
-    margin: 0 0 27px;
+    margin: 0;
 }
 
 .sec-title .border {
@@ -284,6 +284,7 @@ input:-webkit-autofill:focus {
     width: 70px;
     background: #e1e1e1;
     display: block;
+    margin-bottom: 20px;
 }
 
 .sec-title.two {

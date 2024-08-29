@@ -38,8 +38,9 @@ Route::name('user.')->group(
         Route::get('/blogs', 'HomeController@home')->name('blogs');
         // Route::get('/blog/{slug}', 'HomeController@home')->name('blog');
         Route::get('/blog', 'HomeController@home')->name('blog');
+        Route::get('/thank-you', 'HomeController@thank')->name('thankyou');
 
-        Route::get('/{slug}', 'HomeController@page')->name('page');
+        // Route::get('/{slug}', 'HomeController@page')->name('page');
 
         Route::get('/terms', 'ServiceController@terms')->name('terms.terms');
         Route::get('/terms_service', 'ServiceController@terms_service')->name('terms.terms_service');

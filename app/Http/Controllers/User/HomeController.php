@@ -55,6 +55,10 @@ class HomeController extends Controller
     {
         return view('user.page');
     }
+    public function thank()
+    {
+        return view('user.thankyou');
+    }
 
 
     public function submit(ContactFormRequest $request)
@@ -89,6 +93,6 @@ class HomeController extends Controller
         Form::create($data);
 
         // Redirect to a thank you page or back to the form with a success message
-        return redirect()->back()->with('success', 'Your information has been submitted successfully.');
+        return redirect()->route('user.thankyou')->with('success', 'Your information has been submitted successfully.');
     }
 }

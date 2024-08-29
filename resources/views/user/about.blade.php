@@ -42,25 +42,21 @@
 
                         <p>
                         <ul>
-                            <li>Who we are section: "Scalar was founded with one goal in mind, to help those often
+                            <li>Scalar was founded with one goal in mind, to help those often
                                 overlooked gain access to financial resources typically reserved for the wealthy. We aim to
                                 ensure every person can plan for a brighter tomorrow for themselves and their
-                                families."</li>
+                                families.</li>
                             <br>
 
-                            <li>Our Story: "At Scalar, we believe financial wellness and security is a right. Our
-                                mission is to make the best tools, guidance, services and knowledge available to those who
-                                are often overlooked. Through our platform we connect consumers with certified professionals
-                                who understand and connect with these communities to ensure they can enjoy life&#39;s
-                                milestones to come, live comfortably in their retirement, and build generational wealth.
-                                Welcome to your forever journey. Welcome to Scalar."</li>
+                            <li>We believe financial wellness and security is a right. Our mission is to make the best tools, guidance, services and knowledge available to those who are often overlooked. Through our platform, we connect consumers with certified financial professionals who understand all stages of life to ensure they can enjoy life’s milestones to come, live comfortably in their retirement and build generational wealth. <br>
+                                 Welcome to your forever journey, welcome to Scalar.</li>
                             <br>
 
-                            <li>About Scalar: "At Scalar, we believe financial freedom and peace of mind is a right for
+                            {{-- <li>About Scalar: "At Scalar, we believe financial freedom and peace of mind is a right for
                                 all, regardless of income, background or any trials and tribulations you&#39;ve faced. Our
                                 business was built with a single purpose in mind, ensuring everyone has access to the best
                                 tools, education and resources available to plan for the unknown and secure financial
-                                freedom."</li>
+                                freedom."</li> --}}
                             <br>
 
                         </ul>

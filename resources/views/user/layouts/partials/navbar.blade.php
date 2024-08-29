@@ -23,8 +23,10 @@
                             href="{{ route('user.index') }}">Home</a></li>
                     <li class="{{ request()->route()->getName() == 'user.about' ? 'current' : '' }}"><a
                             href="{{ route('user.about') }}">About us</a></li>
+                             <li class="{{ request()->route()->getName() == 'user.form' ? 'form' : '' }}"><a
+                            href="{{ route('user.form') }}">Get Started</a></li>
                     <li class="{{ request()->route()->getName() == 'user.career' ? 'current' : '' }}"><a
-                            href="{{ route('user.career') }}">Career</a></li>
+                            href="{{ route('user.career') }}">Careers</a></li>
                     <li class="{{ request()->route()->getName() == 'user.faq' ? 'current' : '' }}"><a
                             href="{{ route('user.faq') }}">Faq</a></li>
                     <li class="{{ request()->route()->getName() == 'user.contact' ? 'current' : '' }}"><a

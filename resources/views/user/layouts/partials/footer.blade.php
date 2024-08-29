@@ -2,7 +2,7 @@
     <section class="slogan-area">
         <div class="container">
             <div class="title pull-left">
-                <h2>Over 25 years of experience we’ll ensure you always get the best guidance.</h2>
+                {{-- <h2>Over 25 years of experience we’ll ensure you always get the best guidance.</h2> --}}
             </div>
             <div class="buttons pull-right">
                 <a href="{{ route('user.form') }}" class="hvr-sweep-to-bottom">Get Started</a>
@@ -19,7 +19,7 @@
                         <div class="footer-logo">
                             <img src="{{ getLogo() }}" alt="{{ getTitle() }}"style="width: 100px;">
                         </div>
-                        <div class="statistic-info">
+                        {{-- <div class="statistic-info">
                             <p>{{ getFooterSentence() }}</p>
                         </div>
                         <ul class="footer-social-links">
@@ -27,13 +27,13 @@
                             <li><a href="#"><i aria-hidden="true" class="fa fa-twitter"></i></a></li>
                             <li><a href="#"><i aria-hidden="true" class="fa fa-skype"></i></a></li>
                             <li><a href="#"><i aria-hidden="true" class="fa fa-linkedin"></i></a></li>
-                        </ul>
+                        </ul> --}}
                     </div>
                 </div>
                 <!--End single footer widget-->
 
                 <!--Start single footer widget-->
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                {{-- <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="single-footer-widget Subscribe-pdbottom">
                         <div class="title">
                             <h3>Subscribe Us</h3>
@@ -49,10 +49,10 @@
                             </form>
                         </div>
                     </div>
-                </div>
+                </div> --}}
                 <!--End single footer widget-->
                 <!--Start single footer widget-->
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                {{-- <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="single-footer-widget">
                         <div class="contact-address">
                             <div id="contact-address-carousel" class="carousel slide" data-ride="carousel">
@@ -96,7 +96,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
                 <!--End single footer widget-->
             </div>
         </div>

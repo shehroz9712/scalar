@@ -87,7 +87,7 @@
                         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                             <div class="content">
                                 <div class="sec-title">
-                                    <h1>Welcome to Scalar Finances, Where Financial Wellness is Within Reach
+                                    <h1>Why Scalar Finances, Where Financial Wellness is Within Reach
                                     </h1>
                                     <span class="border"></span>
                                 </div>
@@ -95,7 +95,7 @@
                                 <p>At Scalar Finances, we believe in making financial resources accessible to everyone, not
                                     just the privileged few. Founded in 2023, Scalar is dedicated to helping individuals and
                                     families plan for a brighter future. Our mission is to provide the tools, guidance, and
-                                    services necessary to build financial security and generational wealth.</p>
+                                    services necessary to build financial security and  create generational wealth.</p>
                                 <br>
                                 <p>
                                     Explore our range of financial services tailored to your needs.
@@ -135,8 +135,8 @@
                                     <span class="flaticon-business"></span>
                                 </div>
                                 <div class="content">
-                                    <h3>Why Scalar?</h3>
-                                    <p>Our goal is optimise your business relationship by tailoring our services.</p>
+                                    <h3>What We Do</h3>
+                                    <p>At no charge to you, Scalar connects you with financial professionals to help you achieve your goals.</p>
                                 </div>
                             </div>
                         </div>
@@ -148,9 +148,8 @@
                                     <span class="flaticon-business-1"></span>
                                 </div>
                                 <div class="content">
-                                    <h3>Pay for Success</h3>
-                                    <p>Title change to Our Services are free; sub-copy changed to "our matching services are
-                                        free and confidential"</p>
+                                    <h3>How We Work</h3>
+                                    <p>After answering a few questions, Scalar matches you with a certified financial planner to meet you where you are in your financial journey</p>
                                 </div>
                             </div>
                         </div>
@@ -162,15 +161,18 @@
                                     <span class="flaticon-cogwheel"></span>
                                 </div>
                                 <div class="content">
-                                    <h3>Tailor-Made Solutions</h3>
-                                    <p>Title is good, copy change to (you can wordsmith this) "Each individuals needs are
-                                        different, we set out to match you with the right advisor for where you are today
-                                        and where you want to be tomorrow"
+                                    <h3>Why Work with Us</h3>
+                                    <p>At Scalar, we believe financial freedom and expert resources should be available to everyone, not just the 1%. 
+                                        
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <!--End single career em-->
+                        <div class="col-lg-12 text-center">
+                                <a class="btn btn-lg btn-primary page-header" href="{{ route('user.form') }}">Get
+                                    Started</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -229,9 +231,7 @@
                             </div>
                         </div>
                         <div class="col-md-7">
-                            <h2>Scalar Consulting has extensive experience across all industries. We help our clients set
-                                new
-                                standards of excellence.</h2>
+                            <h2>Scalar’s advisor network covers all stages of life, so no matter where you are, we have an advisor that’s right for you!</h2>
                         </div>
                     </div>
                 </div>
@@ -334,8 +334,8 @@
                                 <div class="carousel-inner text-center" role="listbox">
                                     <div class="item active">
                                         <div class="single-caption-carousel-item">
-                                            <h1>our mission is to help everyone achieve their financial goals by connecting
-                                                them with the right professional to meet their needs</h1>
+                                            <h1>Our mission is to help everyone achieve their financial goals by connecting
+                                                them with the right professional to meet their needs.</h1>
                                         </div>
                                     </div>
                                 </div>
@@ -578,7 +578,7 @@
             <!--End call back area-->
 
             <!--Start Brand area-->
-            <section class="brand-area">
+            {{-- <section class="brand-area">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -617,7 +617,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> --}}
             <!--End Brand area-->
         </div>
     </div>

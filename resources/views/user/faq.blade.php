@@ -29,7 +29,7 @@
     </section>
     <!--End breadcrumb bottom area-->
     <!--Start welcome area-->
-    <section class="welcome-area">
+    {{-- <section class="welcome-area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
@@ -69,7 +69,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--End welcome area-->
     <!--Start faq content area-->
     <section class="faq-content-area">
@@ -86,13 +86,7 @@
                             </div>
                         </div>
                         <div class="text-holder">
-                            <p>Statisitc over 25 years of experience we’ll ensure you always get the best guidance. We
-                                serve clients at every level of their organization, in whatever capacity we can be most
-                                useful, whether as a trusted advisor to top management or as a hands-on coach for front
-                                line employees. For every engagement, we assemble a uts team with the most appropriate
-                                experience and expertise. Our goal is to optimise your business relationships by seds
-                                our tailoring our services to your individual requirements a hands-on coach for front
-                                line employees.</p>
+                            <p>At Scalar, we're here to improve the lives of those often overlooked by making top tier financial resources available to all</p>
                         </div>
                         <div class="faq-content">
                             <div class="accordion-box">

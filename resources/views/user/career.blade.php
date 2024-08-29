@@ -54,8 +54,11 @@
                             </div>
                             <p>Join our team of dedicated professionals who are passionate about making a positive impact on
                                 people's lives. At Scalar Finances, we offer rewarding career opportunities in finance,
-                                customer service, technology, and more.
-                                s.</p>
+                                customer service, technology, and more.</p>
+                            <p>
+                                Submit their resume and cover letter which should be emailed
+                                to <a href="mailto:careers@scalarfinances.com">careers@scalarfinances.com</a>
+                            </p>
                         </div>
                         <div class="job-box">
                             <div class="select-category">
@@ -73,7 +76,7 @@
                                 </div>
                             </div>
                             <div class="showing">
-                                <p class="pull-left">Showing 01-11 of 24</p>
+                                <p class="pull-left">Showing 0 of 0 </p>
                             </div>
                             <table class="job-table">
                                 <thead>
@@ -85,7 +88,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
+                                    {{-- <tr>
                                         <td>
                                             <h5>Development Manager</h5>
                                         </td>
@@ -238,7 +241,7 @@
                                         <td>
                                             <h5>25-June-2015</h5>
                                         </td>
-                                    </tr>
+                                    </tr> --}}
                                 </tbody>
                             </table>
                         </div>

@@ -42,14 +42,14 @@
     <section class="branch-area">
         <div class="container">
             <div class="branch-title pull-left">
-                <h3>We Have <span>246 Branches</span> Over the World, Choose Your Nearest Branch Here.</h3>
+                <h3>reach us at <a href="mailto:info@scalarfinances.com">info@scalarfinances.com</a></h3>
             </div>
         </div>
     </section>
     <!--End branch area-->
 
     <!--Start google map area-->
-    <div class="google-map-area">
+    {{-- <div class="google-map-area">
         <div class="google-map" id="contact-page-google-map" data-map-lat="40.712784" data-map-lng="-74.005941"
             data-icon-path="{{ imageFile('resources/map-marker.png') }}" data-map-title="Brooklyn, New York, United Kingdom"
             data-map-zoom="12"
@@ -96,11 +96,11 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!--End google map area-->
 
     <!--Start contact form area-->
-    <section class="contact-form-area">
+    {{-- <section class="contact-form-area">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -166,6 +166,6 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--End contact form area-->
 @endsection

@@ -12,7 +12,7 @@
     <!--End breadcrumb area-->
 
     <!--Start breadcrumb bottom area-->
-    <section class="breadcrumb-bottom-area">
+    {{-- <section class="breadcrumb-bottom-area">
         <div class="container">
             <div class="left pull-left">
                 <a href="#">Thank You</a>
@@ -25,7 +25,7 @@
                 </ul>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--End breadcrumb bottom area-->
     {{-- @if (session('success'))
         <div class="alert alert-success">
@@ -42,9 +42,8 @@
     <section class="branch-area">
         <div class="container">
             <div class="content text-center">
-                <h1 class="fa-3x text-primary">Thank you !</h1>
-                <p>Thanks for subscribing to our news letter. </p>
-                <p>you should receive a confirmation email soon </p>
+                <h1 class="fa-3x text-primary">Thank You !</h1>
+                <p>Thanks for taking the first step in your finanical journey, <br> an advisor will be in touch with you soon! </p>
                 <a class="btn btn-lg btn-primary " href="{{ route('user.home') }}">home</a>
 
             </div>

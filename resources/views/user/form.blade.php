@@ -261,12 +261,18 @@
                                         <div class="input-group mb-3">
                                             <label>At what age do you want to retire?</label>
                                             <select class="form-control" name="age" required>
-                                                <option value="45-50">45 - 50</option>
-                                                <option value="50-55">50 - 55</option>
-                                                <option value="55-60">55 - 60</option>
-                                                <option value="60-65">60 - 65</option>
-                                                <option value="65-70">65 - 70</option>
-                                                <option value="70-75">70 - 75</option>
+                                                <option value="20-25">20 - 25</option>
+                                                <option value="26-30">26 - 30</option>
+                                                <option value="31-35">31 - 35</option>
+                                                <option value="36-40">36 - 40</option>
+                                                <option value="41-45">41 - 45</option>
+                                                <option value="46-50">46 - 50</option>
+                                                <option value="51-55">51 - 55</option>
+                                                <option value="56-60">56 - 60</option>
+                                                <option value="61-65">61 - 65</option>
+                                                <option value="66-70">66 - 70</option>
+                                                <option value="70+">70+</option>
+                                                
                                             </select>
                                         </div>
                                         <div class="input-group">
@@ -298,12 +304,14 @@
                                             <label>How much does your household make per year before taxes?</label>
                                             <select name="annualIncome" class="form-control" required>
                                                 <option value="" disabled selected>Select your income range</option>
-                                                <option value="0-25k">$0 - $25k</option>
-                                                <option value="25-50k">$25k - $50k</option>
-                                                <option value="50-75k">$50k - $75k</option>
-                                                <option value="75-100k">$75k - $100k</option>
-                                                <option value="100-150k">$100k - $150k</option>
-                                                <option value="150k+">$150k+</option>
+                                                <option value="0-25K">$0 - $25K</option>
+                                                <option value="25K-50K">$25K - $50K</option>
+                                                <option value="50K-100K">$50K - $100K</option>
+                                                <option value="100K-150K">$100K - $150K</option>
+                                                <option value="150K-200K">$150K - $200K</option>
+                                                <option value="200K-250K">$200K - $250K</option>
+                                                <option value="250K+">$250K+</option>
+                                                
                                             </select>
                                         </div>
                                         <div class="input-group">

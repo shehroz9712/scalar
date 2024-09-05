@@ -56,11 +56,11 @@
                                 people's lives. At Scalar Finances, we offer rewarding career opportunities in finance,
                                 customer service, technology, and more.</p>
                             <p>
-                                Submit their resume and cover letter which should be emailed
-                                to <a href="mailto:careers@scalarfinances.com">careers@scalarfinances.com</a>
+                                Don’t see an opening right for you? Join our talent pool by emailing your resume and cover letter to  <a
+                                    href="mailto:careers@scalarfinances.com">careers@scalarfinances.com</a>
                             </p>
                         </div>
-                        <div class="job-box">
+                        {{-- <div class="job-box">
                             <div class="select-category">
                                 <div class="category-item">
                                     <input type="radio" id="all-job" name="job" value="All Jobs">
@@ -87,8 +87,7 @@
                                         <th class="posted">Posted On</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    {{-- <tr>
+                                <tbody>  <tr>
                                         <td>
                                             <h5>Development Manager</h5>
                                         </td>
@@ -241,10 +240,10 @@
                                         <td>
                                             <h5>25-June-2015</h5>
                                         </td>
-                                    </tr> --}}
+                                    </tr> 
                                 </tbody>
                             </table>
-                        </div>
+                        </div>--}}
                     </div>
                 </div>
 

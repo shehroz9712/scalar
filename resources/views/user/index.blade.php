@@ -1,22 +1,23 @@
 @extends('user.layouts.app')
 
 @section('css')
-<style>
-    .rev_slider_wrapper .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Change the color and opacity as needed */
-    z-index: 1;
-}
-.rev_slider_wrapper .slide-content-box {
-    position: relative;
-    z-index: 2;
-}
+    <style>
+        .rev_slider_wrapper .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Change the color and opacity as needed */
+            z-index: 1;
+        }
 
-</style>
+        .rev_slider_wrapper .slide-content-box {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
 @endsection
 @section('content')
     <div class="container-fluid dashboard-default-sec">
@@ -29,7 +30,7 @@
                             <img src="{{ imageFile('slides/2.jpg') }}" alt="" width="1920" height="695"
                                 data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat"
                                 data-bgparallax="1">
-                                <div class="overlay"></div>
+                            <div class="overlay"></div>
 
                             <div class="tp-caption tp-resizeme" data-x="right" data-hoffset="0" data-y="center"
                                 data-voffset="0" data-transform_idle="o:1;"
@@ -53,7 +54,7 @@
                             <img src="{{ imageFile('slides/3.jpg') }}" alt="" width="1920" height="695"
                                 data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat"
                                 data-bgparallax="2">
-                                <div class="overlay"></div>
+                            <div class="overlay"></div>
 
                             <div class="tp-caption tp-resizeme" data-x="left" data-hoffset="0" data-y="center"
                                 data-voffset="0" data-transform_idle="o:1;"
@@ -87,7 +88,7 @@
                         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                             <div class="content">
                                 <div class="sec-title">
-                                    <h1>Why Scalar 
+                                    <h1>Why Scalar
                                     </h1>
                                     <span class="border"></span>
                                 </div>
@@ -95,7 +96,7 @@
                                 <p>At Scalar Finances, we believe in making financial resources accessible to everyone, not
                                     just the privileged few. Founded in 2023, Scalar is dedicated to helping individuals and
                                     families plan for a brighter future. Our mission is to provide the tools, guidance, and
-                                    services necessary to build financial security and  create generational wealth.</p>
+                                    services necessary to build financial security and create generational wealth.</p>
                                 <br>
                                 <p>
                                     Explore our range of financial services tailored to your needs.
@@ -110,12 +111,14 @@
                                 <p>Welcome to Scalar Finances – Your Partner in Building a Better Tomorrow.</p>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12"
+                            style="margin: 40px 0px;">
                             <div class="video-box">
                                 <div class="overlay">
                                     <div class="box">
                                         <div class="content text-center">
-                                            <img src="{{ imageFile('about/video-gallery.jpg') }}" style="width: 100%" alt="">
+                                            <img src="{{ imageFile('about/video-gallery.jpg') }}" style="width: 100%"
+                                                alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -138,7 +141,8 @@
                                 </div>
                                 <div class="content">
                                     <h3>What We Do</h3>
-                                    <p>At no charge to you, Scalar connects you with financial professionals to help you achieve your goals.</p>
+                                    <p>At no charge to you, Scalar connects you with financial professionals to help you
+                                        achieve your goals.</p>
                                 </div>
                             </div>
                         </div>
@@ -151,7 +155,8 @@
                                 </div>
                                 <div class="content">
                                     <h3>How We Work</h3>
-                                    <p>After answering a few questions, Scalar matches you with a certified financial planner to meet you where you are in your financial journey</p>
+                                    <p>After answering a few questions, Scalar matches you with a certified financial
+                                        planner to meet you where you are in your financial journey</p>
                                 </div>
                             </div>
                         </div>
@@ -164,16 +169,17 @@
                                 </div>
                                 <div class="content">
                                     <h3>Why Work with Us</h3>
-                                    <p>At Scalar, we believe financial freedom and expert resources should be available to everyone, not just the 1%. 
-                                        
+                                    <p>At Scalar, we believe financial freedom and expert resources should be available to
+                                        everyone, not just the 1%.
+
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <!--End single career em-->
                         <div class="col-lg-12 text-center">
-                                <a class="btn btn-lg btn-primary page-header" href="{{ route('user.form') }}">Get
-                                    Started</a>
+                            <a class="btn btn-lg btn-primary page-header" href="{{ route('user.form') }}">Get
+                                Started</a>
                         </div>
                     </div>
                 </div>
@@ -233,7 +239,8 @@
                             </div>
                         </div>
                         <div class="col-md-7">
-                            <h2>Scalar’s advisor network covers all stages of life, so no matter where you are, we have an advisor that’s right for you!</h2>
+                            <h2>Scalar’s advisor network covers all stages of life, so no matter where you are, we have an
+                                advisor that’s right for you!</h2>
                         </div>
                     </div>
                 </div>
@@ -395,7 +402,7 @@
             <!--End testimonial carousel area-->
 
             <!--Start latest news area-->
-            <section class="latest-news-area">
+            {{-- <section class="latest-news-area">
                 <div class="container">
                     <div class="sec-title pull-left">
                         <h1>Latest News & Updates</h1>
@@ -576,7 +583,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> --}}
             <!--End call back area-->
 
             <!--Start Brand area-->

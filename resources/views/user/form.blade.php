@@ -243,16 +243,65 @@
                                 @csrf
                                 <!-- progressbar -->
                                 <ul id="progressbar">
-                                    <li class="active" id="goals"><strong>Financial Goals</strong></li>
+                                    <li class="active" id="personal"><strong>Personal</strong></li>
+                                    <li  id="goals"><strong>Financial Goals</strong></li>
                                     <li id="financials"><strong>Current Financials</strong></li>
                                     <li id="advisor"><strong>Advisor</strong></li>
-                                    <li id="personal"><strong>Personal</strong></li>
                                 </ul>
                                 <div class="progress">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div> <br>
+ <!-- Personal Information -->
+ <fieldset>
+    <div class="form-card">
+        <h2 class="fs-title">Tell Us About Yourself:</h2>
 
+        <div class="input-group mt-5">
+            <label for="firstName">What is your first name?</label>
+            <input type="text" class="form-control" id="firstName"
+                placeholder="What is your first name?" name="firstName" required>
+        </div>
+
+        <div class="input-group mt-5">
+            <label for="lastName">Nice to meet you, [First Name]. What is your last
+                name?</label>
+            <input type="text" class="form-control" id="lastName"
+                placeholder="Nice to meet you, [First Name]. What is your last name?"
+                name="lastName" required>
+        </div>
+
+        <div class="input-group mt-5">
+            <label for="email">Please provide your email address</label>
+            <input type="email" class="form-control" id="email"
+                placeholder="Please provide your email address" name="email" required>
+        </div>
+
+        <div class="input-group mt-5">
+            <label for="phone">What is a good phone number to reach you?</label>
+            <input type="text" class="form-control" id="phone"
+                placeholder="What is a good phone number to reach you?" name="phone"
+                pattern="\d{3}-\d{3}-\d{4}" required>
+        </div>
+
+        <div class="input-group mt-5">
+            <label for="birthYear">What is your birth Month year?</label>
+            <input type="month" class="form-control" id="birthYear" placeholder="2024"
+                name="birthYear" required>
+        </div>
+
+        <div class="input-group mt-5">
+            <label for="zipCode">What is your ZIP code?</label>
+            <input type="text" class="form-control" id="zipCode"
+                placeholder="What is your ZIP code?" name="zipCode" pattern="\d{5}"
+                required>
+        </div>
+        <button type="button" class="next action-button" value="Next">Next</button>
+        <button type="button" class="previous action-button-previous">Previous
+        </button>
+    </div>
+
+</fieldset>
 
                                 <!-- Financial Goals -->
                                 <fieldset>
@@ -358,62 +407,14 @@
                                                 choosing an advisor?</label>
                                             <textarea class="form-control" id="otherConsiderations" name="otherConsiderations" style="width: 100%"></textarea>
                                         </div>
-                                        <button type="button" class="next action-button" value="Next">Next</button>
-                                        <button type="button" class="previous action-button-previous">Previous
-                                        </button>
+                                       
+        <button type="submit" class="next action-button" value="Next">Finish</button>
+        <button type="button" class="previous action-button-previous">Previous
+        </button>
                                     </div>
                                 </fieldset>
 
-                                <!-- Personal Information -->
-                                <fieldset>
-                                    <div class="form-card">
-                                        <h2 class="fs-title">Tell Us About Yourself:</h2>
-
-                                        <div class="input-group mt-5">
-                                            <label for="firstName">What is your first name?</label>
-                                            <input type="text" class="form-control" id="firstName"
-                                                placeholder="What is your first name?" name="firstName" required>
-                                        </div>
-
-                                        <div class="input-group mt-5">
-                                            <label for="lastName">Nice to meet you, [First Name]. What is your last
-                                                name?</label>
-                                            <input type="text" class="form-control" id="lastName"
-                                                placeholder="Nice to meet you, [First Name]. What is your last name?"
-                                                name="lastName" required>
-                                        </div>
-
-                                        <div class="input-group mt-5">
-                                            <label for="email">Please provide your email address</label>
-                                            <input type="email" class="form-control" id="email"
-                                                placeholder="Please provide your email address" name="email" required>
-                                        </div>
-
-                                        <div class="input-group mt-5">
-                                            <label for="phone">What is a good phone number to reach you?</label>
-                                            <input type="text" class="form-control" id="phone"
-                                                placeholder="What is a good phone number to reach you?" name="phone"
-                                                pattern="\d{3}-\d{3}-\d{4}" required>
-                                        </div>
-
-                                        <div class="input-group mt-5">
-                                            <label for="birthYear">What is your birth Month year?</label>
-                                            <input type="month" class="form-control" id="birthYear" placeholder="2024"
-                                                name="birthYear" required>
-                                        </div>
-
-                                        <div class="input-group mt-5">
-                                            <label for="zipCode">What is your ZIP code?</label>
-                                            <input type="text" class="form-control" id="zipCode"
-                                                placeholder="What is your ZIP code?" name="zipCode" pattern="\d{5}"
-                                                required>
-                                        </div>
-                                        <button type="submit" class="next action-button" value="Next">Finish</button>
-                                        <button type="button" class="previous action-button-previous">Previous
-                                        </button>
-                                    </div>
-
-                                </fieldset>
+                               
                             </form>
                         </div>
                     </div>

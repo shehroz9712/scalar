@@ -39,7 +39,7 @@
                             <div class="overlay">
                                 <div class="box">
                                     <div class="content">
-                                        <h1>Welcome to Our<br> Employment Section.</h1>
+                                        <h1>Join Us</h1>
                                         <div class="button">
                                             <a class="hvr-sweep-to-bottom" href="{{ route('user.contact') }}">Apply Now</a>
                                         </div>

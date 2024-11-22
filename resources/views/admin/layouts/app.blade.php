@@ -39,8 +39,10 @@
 
         </div>
     </div>
+    
     @include('admin.layouts.partials.scripts')
-
+    
+    @yield('js')
 </body>
 
 </html>

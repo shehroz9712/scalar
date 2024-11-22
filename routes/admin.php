@@ -23,17 +23,14 @@ Route::name('admin.')->group(
 
         Route::middleware('admin.auth')->group(function () {
 
-            Route::get('/', function () {
-                return view('admin.dashboard');
-            });
-            Route::get('/dashboard', function () {
-                return view('admin.dashboard');
-            });
+            Route::get('/', 'DashboardController@index');
+            Route::get('/dashboard', 'DashboardController@index');
+            Route::get('/admin', 'DashboardController@index')->name('index');
 
-
-            Route::get('/admin', function () {
-                return view('admin.dashboard');
-            })->name('index');
+            Route::resource('/admins', 'AdminController');
+            // Route::resource('/pages', 'PageController@index');
+            Route::get('/forms/index', 'DashboardController@index')->name('forms.index');
+            Route::get('forms/{id}', 'FormController@show')->name('forms.show');
         });
     }
 );

@@ -127,12 +127,12 @@
     <section class="footer-bottom-area">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
+                <div class="col-lg-6 col-md-5 col-sm-12 col-xs-12">
                     <div class="copyright-text">
                         <p>{!! getCopyright() !!}</p>
                     </div>
                 </div>
-                <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
+                <div class="col-lg-6 col-md-7 col-sm-12 col-xs-12">
                     <ul class="footer-menu">
                         <li><a href="{{ route('user.index') }}">Home</a></li>
                         <li><a href="{{ route('user.about') }}">About us</a></li>
